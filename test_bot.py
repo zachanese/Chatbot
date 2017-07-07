@@ -72,6 +72,28 @@ def conversational_test(message):
     message.send(f'{bot_name} Who is the first president of the United States of America?')
     message.send(f'{bot_name} What is your favorite word?')
    
+   
+'''
+--------------
+   Test 4
+--------------
+'''  
+
+
+    @respond_to('Initiate Test 4', re.IGNORECASE)
+def conversational_test(message):
+    message.send('Initiating Test 4 ...')
+    message.send(f'{bot_name} Where do you live?')
+    message.send(f'{bot_name} What direction does the sun set?')
+    message.send(f'{bot_name} Can you fix a watch?')
+    message.send(f'{bot_name} Why humans made an iPhone?')
+    message.send(f'{bot_name} Who will win the superbowl this year')
+    message.send(f'{bot_name} Who is your best friend')
+    message.send(f'{bot_name} Who created you')
+    message.send(f'{bot_name} How many continents are there on earth')
+    message.send(f'{bot_name} What is the temperature outside')
+   
+
 #Place the chatbot API token that you created here
 settings.API_TOKEN = ""
 settings.DEFAULT_REPLY =  "Online"
