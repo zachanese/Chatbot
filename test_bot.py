@@ -52,7 +52,26 @@ def conversational_test(message):
     message.send(f'{bot_name} Can you eat ketchup as a fruittarian?')
     message.send(f'{bot_name} What about durian?')
     message.send(f'{bot_name} Is that why you smell like that?')
+   
+'''
+--------------
+   Test 3
+--------------
+'''   
 
+@respond_to('Initiate Test 3', re.IGNORECASE)
+def conversational_test(message):
+    message.send('Initiating Test 3 ...')
+    message.send(f'{bot_name} Would you like to have a coversation with me?')
+    message.send(f'{bot_name} Who does number two work for?')
+    message.send(f'{bot_name} What is your name?')
+    message.send(f'{bot_name} How old are you?')
+    message.send(f'{bot_name} How much wood would a woodchuck chuck if a woodchuck could chuck wood? ')
+    message.send(f'{bot_name} Do you have any enemies?')
+    message.send(f'{bot_name} Do you know what love is?')
+    message.send(f'{bot_name} Who is the first president of the United States of America?')
+    message.send(f'{bot_name} What is your favorite word?')
+   
 #Place the chatbot API token that you created here
 settings.API_TOKEN = ""
 settings.DEFAULT_REPLY =  "Online"
